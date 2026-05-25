@@ -43,8 +43,8 @@ Material:
     - _DistFar: 4
     - _DistNear: 4
     - _DitherFarScale: 0.01
-    - _DitherNearScale: 0.01
-    - _DitherScaleStatic: 0.02
+    - _DitherNearScale: 0.005
+    - _DitherScaleStatic: 0.01
     - _DynamicPlaid: 0
     - _FlatShading: 1
     - _InvertLight: 0
@@ -58,7 +58,7 @@ Material:
     - _ThreshDither: 1
     - _ThreshMid: 0
     - _UniformObjectDither: 0
-    - _UniformObjectScale: 40
+    - _UniformObjectScale: 10
     - _ZWrite: 1
     m_Colors: []
   m_BuildTextureStacks: []
