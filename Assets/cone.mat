@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: v68
-  m_Shader: {fileID: 4800000, guid: 8772974f0b615664fbddde7e25b10976, type: 3}
+  m_Name: cone
+  m_Shader: {fileID: 4800000, guid: 641b0de5819a85d4dbd4c260e978ad64, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _IndexTex:
-        m_Texture: {fileID: 2800000, guid: 834b1fb92e52f6d4cb5d7109dc094445, type: 3}
+        m_Texture: {fileID: 2800000, guid: a34e8edcd69268e4cbcc22fa02002ecc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PaletteTex:
@@ -35,7 +35,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaMode: 2
+    - _AlphaMode: 0
     - _Ambient: 0.15
     - _BackFaceMode: 2
     - _BandCap: 0
@@ -46,7 +46,7 @@ Material:
     - _DistNear: 4
     - _DitherFarScale: 0.01
     - _DitherNearScale: 0.01
-    - _DitherScaleStatic: 0.02
+    - _DitherScaleStatic: 0.005
     - _DynamicPlaid: 0
     - _FlatShading: 1
     - _InvertLight: 0
@@ -54,13 +54,13 @@ Material:
     - _LightScale: 1.65
     - _LightSteps: 6.5
     - _ShadowCutoff: 0
-    - _ThreshBand: 0
+    - _ThreshBand: 0.26
     - _ThreshBlack: 0.2
     - _ThreshDark: 0.16
     - _ThreshDither: 1
     - _ThreshMid: 0
     - _UniformObjectDither: 0
-    - _UniformObjectScale: 40
+    - _UniformObjectScale: 5
     - _ZWrite: 1
     m_Colors: []
   m_BuildTextureStacks: []

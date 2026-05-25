@@ -7,13 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: v68 ring 1 blue
-  m_Shader: {fileID: 4800000, guid: 8772974f0b615664fbddde7e25b10976, type: 3}
+  m_Name: house
+  m_Shader: {fileID: 4800000, guid: 641b0de5819a85d4dbd4c260e978ad64, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
-  - _FLATSHADING_ON
   - _INVERTLIGHTBACK_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -26,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _IndexTex:
-        m_Texture: {fileID: 2800000, guid: ad67ac5cd7eb8be489f961785cad8763, type: 3}
+        m_Texture: {fileID: 2800000, guid: 89034a6aa60942344b1cb521be24fd76, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PaletteTex:
@@ -37,10 +36,10 @@ Material:
     m_Floats:
     - _AlphaMode: 2
     - _Ambient: 0.15
-    - _BackFaceMode: 2
+    - _BackFaceMode: 1
     - _BandCap: 0
     - _BandScale: 0
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.01
     - _DistFar: 4
     - _DistNear: 4
@@ -48,7 +47,7 @@ Material:
     - _DitherNearScale: 0.01
     - _DitherScaleStatic: 0.02
     - _DynamicPlaid: 0
-    - _FlatShading: 1
+    - _FlatShading: 0
     - _InvertLight: 0
     - _InvertLightBack: 1
     - _LightScale: 1.65
@@ -60,7 +59,7 @@ Material:
     - _ThreshDither: 1
     - _ThreshMid: 0
     - _UniformObjectDither: 0
-    - _UniformObjectScale: 20
+    - _UniformObjectScale: 40
     - _ZWrite: 1
     m_Colors: []
   m_BuildTextureStacks: []
