@@ -2,23 +2,23 @@ Shader "Custom/v68"
 {
     Properties
     {
-        _IndexTex ("Index Texture", 2D) = "white" {}
-        _PaletteTex ("Palette (16 x 4)", 2D) = "white" {}
+        _IndexTex ("PicoCAD Texture", 2D) = "white" {}
+        _PaletteTex ("Palette (16 x 3)", 2D) = "white" {}
 
         [Header(Unmoving Dither Settings)]
         [Toggle] _DynamicPlaid ("Use Dynamic Camera Scaling", Float) = 0
-        _DitherScaleStatic ("Static Grid Scale", Float) = 0.02
+        _DitherScaleStatic ("Static Grid Scale", Float) = 0.01
         _DitherNearScale ("Near Grid Scale", Float) = 0.01
-        _DitherFarScale ("Far Grid Scale", Float) = 0.01
+        _DitherFarScale ("Far Grid Scale", Float) = 0.005
         _DistNear ("Distance Near", Float) = 4
         _DistFar ("Distance Far", Float) = 4
 
         [Header(Uniform Dither Settings)]
         [Toggle] _UniformObjectDither ("Switch away from Unmoving", Float) = 0
-        _UniformObjectScale ("Grid Scale", Range(0,80)) = 40.0
+        _UniformObjectScale ("Grid Scale", Range(0,80)) = 10.0
 
         [Header(Shading)]
-        [Toggle] _FlatShading ("Stepped Shading", Float) = 1
+        [Toggle] _FlatShading ("Low Poly Shading", Float) = 1
         _LightScale ("Light Scale", Range(0, 4)) = 1.65
         _Ambient ("Ambient", Range(0,1)) = 0.15
         _ThreshBlack ("Threshold Black", Range(0,1)) = 0.2
@@ -26,14 +26,14 @@ Shader "Custom/v68"
         _ThreshMid ("Threshold Mid", Range(0,1)) = 0
         _ThreshDither ("Threshold Dither", Range(0,1)) = 1
         _LightSteps ("Light Steps", Range(2, 16)) = 8
-        _ThreshBand ("Amply Bands", Range(0, 1)) = 0.0
+        _ThreshBand ("Amplify Bands", Range(0, 1)) = 0.0
 
         [HideInInspector] _ShadowCutoff ("Shadow Cutoff", Range(0,1)) = 0.0
         
         [Header(Rendering Options)]
         [Enum(Front,2,Back,1,Both,0)] _Cull ("Show Faces", Float) = 2
-        [Enum(Flat Light,0,Flat Dark,1,Light Scale,2)] _BackFaceMode ("Back Face Shading", Float) = 2
-        [Enum(Flat Cut,0,Stipple,1,Blend,2)] _AlphaMode ("Alpha Mode", Float) = 2
+        [Enum(Flat Light,0,Flat Dark,1,Dynamic,2)] _BackFaceMode ("Back Face Shading", Float) = 2
+        [Enum(Flat Cut,0,Stipple,1,Transparent,2)] _AlphaMode ("Alpha Mode", Float) = 2
         _Cutoff ("Alpha Cutoff", Range(0,1)) = 0.01
         [HideInInspector] [Enum(Off,0,On,1)] _ZWrite ("Depth Write (ZWrite)", Float) = 1
         [Toggle] _InvertLight ("Invert Lighting", Float) = 0
