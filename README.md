@@ -4,35 +4,24 @@ A shader with faithful recreation for 1 & 2, and more.
 
 
 
-# 🎨 Picocad-Style URP Shader for Unity 6.x
+# 🎨 PicoCAD-Style URP Shader for Unity 6.x
 
-A beginner-friendly Unity URP shader designed to emulate the crisp, stylized aesthetic of **Picocad**. Built for simplicity and creativity, this shader includes a demo scene, intuitive controls, and tools for palette/texture management. It's robust, gets the job done, and is meant to encourage experimentation.
+A beginner-friendly Unity URP shader designed to emulate the crisp, low-poly aesthetic of **PicoCAD**. Built for simplicity and creativity, this shader includes a demo scene, and intuitive inspector controls. It's robust, gets the job done, and is meant to encourage experimentation.
 
-> 💡 *"It's probably fine. It gets the job done and I hope to encourage creativity."*
-
----
-
-## ✨ Features
-- 🌞 Dynamic lighting support
-- 🟦 Unmoving plaid/texture alignment
-- 🎨 Custom palette & texture injection
-- 🔍 Alpha/transparent material control
-- 📐 Dither pattern support
-- 🔲 Round & flat/low-poly shading modes
-- 📦 Demo scene included for easy testing
+> 💡 *"It's probably not the best shader in the world. But, it gets the job done and I hope it encourages creativity."*
 
 ---
 
 ## 📦 Requirements
 - **Unity 6.x** (URP pipeline required)
-- Basic knowledge of Unity material/shader assignment
+- Basic knowledge of Unity materials & inspector assignment
 - No external packages needed
 
 ---
 
-## 🛠️ Setup & Configuration
+## 🛠️ Setup & Import Settings
 
-### 1. Camera Settings
+### 1. Camera & Viewport
 For accurate color reproduction, **disable Post-Processing** on your main camera and in the Scene Viewport:
 - `Camera > Post Processing` → `Off`
 - `Scene View > Camera > Post Processing` → `Off`
@@ -42,32 +31,77 @@ To preserve the crisp, pixel-perfect look:
 - `Mip Maps` → **Off**
 - `Filter Mode` → **Point (no filter)**
 - `Compression` → **None**
-- `Alpha Source` → **From Input or Grayscale** (enable as needed)
+- `Alpha Source` → **From Input**
+
 
 ### 3. Palette Setup
-Copy your palette directly from Picocad:
-1. Open your Picocad scene
-2. Export/screenshot the palette grid
-3. Import into Unity with settings above
-4. Assign to the shader's `Palette` property
+Copy your palette directly from PicoCAD:
+1. Open your PicoCAD scene
+2. Screenshot the palette grid
+3. Edit into 16x3 image
+4. Import into Unity with settings above
+5. Assign to the shader's `Palette` property
+
+(Or just make edits to the provided bit-palette.png)
 
 📸 *[TODO: Add screenshot/gif showing palette copy process]*
 
 ---
 
-## ⚠️ Important Notes
+## 🎛️ Shader Inspector Guide
+
+### 🖼️ Textures
+| Property | Description |
+|----------|-------------|
+| **PicoCAD Texture** | Index map + alpha. RGB drives color lookup, Alpha controls visibility/cutoff. |
+| **Palette (16 x 3)** | 16-color gradient × 3 shading rows. |
+
+### 📐 Dither / Plaid Grid
+| Property | Description |
+|----------|-------------|
+| **Use Dynamic Camera Scaling** | Toggles distance-based grid scaling. |
+| **Static Grid Scale** | Base dither size when dynamic scaling is off. |
+| **Near / Far Grid Scale** | Min/max dither sizes when dynamic scaling is on. |
+| **Distance Near / Far** | Camera distance thresholds for dynamic scaling fade. |
+| **Switch away from Unmoving** | Toggles to **Uniform Object-Space Dither** (scales with object, not camera). |
+| **Grid Scale** | Size multiplier for uniform dither mode. |
+
+### 💡 Shading & Lighting
+| Property | Description |
+|----------|-------------|
+| **Low Poly Shading** | Enables flat shading via geometry shader. Disables per-vertex normal interpolation. |
+| **Light Scale** | Multiplies overall lighting intensity. |
+| **Ambient** | Base shadow floor (0 = pitch black, 1 = fully lit). |
+| **Threshold Black/Dark/Mid/Dither** | Quantized lighting band cutoffs. Adjust to control how many shading steps appear. |
+| **Light Steps** | Number of discrete lighting bands (2–16). |
+| **Amplify Bands** | Adds spacing between threshold bands for sharper banding. |
+| **Invert Lighting / Back Face** | Flips light direction for front/back faces (useful for inside-out meshes or stylized lighting). |
+
+### 🎨 Rendering Options
+| Property | Description |
+|----------|-------------|
+| **Show Faces** | `Front` / `Back` / `Both` face culling. |
+| **Back Face Shading** | `Flat Light` (row 1), `Flat Dark` (row 3), or `Dynamic` (calculates lighting per back-face pixel). |
+| **Alpha Mode** | `Flat Cut` (hard alpha), `Stipple` (dithered transparency), `Transparent` (blend mode). |
+| **Alpha Cutoff** | Minimum alpha value to render. Pixels below this are discarded. |
+
+---
+
+## ⚠️ Critical Notes
 
 ### 🔹 Transparency & Render Queue
 > **TRANSPARENCY CAN'T BE STRESSED ENOUGH**
 
-This shader uses blend transparency. To avoid clipping, z-fighting, or render distance jumps:
-- Always set the **Render Queue** manually in the material inspector
-- Use `Depth Write = Off` for transparent passes
-- Test with multiple overlapping objects to verify sorting
+Alpha Mode Transparent: shader uses rendering queue. To avoid clipping, z-fighting, or render distance jumps:
+- Always set the **Render Queue** manually in the material inspector (`Transparent` = 3001 or more)
+- `Flat Cut` & `Stipple` modes disable depth write to prevent sorting artifacts (so no worries)
+- `Transparent` mode enables texture image  but requires correct render queue ordering <---
+- Test with overlapping objects to verify sorting behavior after adjusting queue
 
 ### 🔹 Depth & Pixel Camera
-For accurate pixel-aligned rendering, consider using a pixel-snapping camera setup:
+For accurate pixel-aligned rendering, I used a pixel-snapping camera setup found on youtube:
 📺 [Render Pixel Camera Tutorial](https://www.youtube.com/watch?v=R7922Pchiq4)
+
 
 ---
 
@@ -75,20 +109,17 @@ For accurate pixel-aligned rendering, consider using a pixel-snapping camera set
 
 | Status | Issue |
 |--------|-------|
-| ✅ Fixed | Transparency clipping & render distance jumps (render queue resolved) |
-| ✅ Fixed | Triangles appearing oddly with flat shading |
-| ✅ Fixed | Floor transparency issues (resolved in v53) |
-| 🚧 Todo | Transparency slider for full-object opacity (no alpha texture needed) |
+| 🚧 Todo | Global transparency slider (object-wide opacity without alpha texture) |
 | 🚧 Todo | Support for palettes larger than 16x3 |
-| 🚧 Todo | More built-in palette presets |
-| 🚧 Todo | Smooth dynamic distance scaling (currently janky) |
+| 🚧 Todo | Adding more palette presets to the repo |
+| 🚧 Todo | Smooth dynamic distance scaling (currently janky, works best clamped) |
 
 ---
 
 ## 🙏 Credits
 
-- **Johan Peitz** – [Picocad](https://www.picocad.com/) & [The Bunny](https://www.picocad.com/bunny)
-- **hfcred** – [WedViewer](https://github.com/hfcred/wedviewer) (base shader code)
+- **Johan Peitz** – [PicoCAD](https://www.picocad.com/) & [The Bunny](https://www.picocad.com/bunny)
+- **hfcred** – [WedViewer](https://github.com/hfcred/wedviewer) (base shader architecture)
 - **GlasCade** – Demo scene music
 - **Para** – Jet, books, stop sign area assets
 - **Holland** (`holland1793` on Discord) – Soft serve cone model
