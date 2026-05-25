@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: v68 ring 1 blue
+  m_Shader: {fileID: 4800000, guid: 8772974f0b615664fbddde7e25b10976, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _FLATSHADING_ON
+  - _INVERTLIGHTBACK_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _IndexTex:
+        m_Texture: {fileID: 2800000, guid: ad67ac5cd7eb8be489f961785cad8763, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PaletteTex:
+        m_Texture: {fileID: 2800000, guid: ad78e3af04d54494aa7b8d5ba95e4ac3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaMode: 2
+    - _Ambient: 0.15
+    - _BackFaceMode: 2
+    - _BandCap: 0
+    - _BandScale: 0
+    - _Cull: 2
+    - _Cutoff: 0.01
+    - _DistFar: 4
+    - _DistNear: 4
+    - _DitherFarScale: 0.01
+    - _DitherNearScale: 0.01
+    - _DitherScaleStatic: 0.02
+    - _DynamicPlaid: 0
+    - _FlatShading: 1
+    - _InvertLight: 0
+    - _InvertLightBack: 1
+    - _LightScale: 1.65
+    - _LightSteps: 6.5
+    - _ShadowCutoff: 0
+    - _ThreshBand: 0
+    - _ThreshBlack: 0.2
+    - _ThreshDark: 0.16
+    - _ThreshDither: 1
+    - _ThreshMid: 0
+    - _UniformObjectDither: 0
+    - _UniformObjectScale: 20
+    - _ZWrite: 1
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

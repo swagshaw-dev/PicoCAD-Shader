@@ -11,9 +11,14 @@ public class PlayerController : MonoBehaviour
     [Header("Mouse Look")]
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
+    
+    // NEW: Configurable Y range for vertical look (pitch)
+    public float minPitch = -25f;
+    public float maxPitch = 25f;
 
     private Rigidbody rb;
     private bool isGrounded;
+    private float currentPitch = 0f; // NEW: Tracks current vertical rotation
 
     void Start()
     {
@@ -37,7 +42,17 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 mouseDelta = Mouse.current.delta.ReadValue() * mouseSensitivity * 0.1f;
 
+        // Player Y rotation (left/right)
         transform.Rotate(Vector3.up * mouseDelta.x);
+
+        // NEW: Camera pitch (up/down) clamped to Y range
+        currentPitch -= mouseDelta.y;
+        currentPitch = Mathf.Clamp(currentPitch, minPitch, maxPitch);
+        
+        if (cameraTransform != null)
+        {
+            cameraTransform.localRotation = Quaternion.Euler(currentPitch, 0f, 0f);
+        }
     }
 
     void Move()
