@@ -1533,7 +1533,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 833b7f7e3fe985f4a81fe01b3162a816, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.04
+      value: -6.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 833b7f7e3fe985f4a81fe01b3162a816, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1541,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 833b7f7e3fe985f4a81fe01b3162a816, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.39
+      value: 21.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 833b7f7e3fe985f4a81fe01b3162a816, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1574,7 +1574,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 833b7f7e3fe985f4a81fe01b3162a816, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 29649f256e7e8d44193a603d05d7a026, type: 2}
+      objectReference: {fileID: 2100000, guid: 318637ff5db068c44bab67a36f7ef84a, type: 2}
     - target: {fileID: 919132149155446097, guid: 833b7f7e3fe985f4a81fe01b3162a816, type: 3}
       propertyPath: m_Name
       value: misc
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: No running off the screen!
+  initialMessage: '!'
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -2694,7 +2694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1010683143
 Transform:
   m_ObjectHideFlags: 0
@@ -2946,7 +2946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1111825490
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2956,7 +2956,7 @@ RectTransform:
   m_GameObject: {fileID: 1111825489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.99, y: 0.91, z: 1}
+  m_LocalScale: {x: 1.646025, y: 0.7527049, z: 0.8271482}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 283711959}
@@ -2964,7 +2964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -140.7, y: -189.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111825491
@@ -3207,7 +3207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: No running off the screen!
+  initialMessage: '!'
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -3733,7 +3733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: No running off the screen!
+  initialMessage: '!'
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -4651,7 +4651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: No running off the screen!
+  initialMessage: '!'
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
