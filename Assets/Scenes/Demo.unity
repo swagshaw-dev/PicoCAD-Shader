@@ -1069,6 +1069,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1121127726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &342432909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f42ba886ae9261a42b43e40eac785c9c, type: 3}
+  m_PrefabInstance: {fileID: 1304559334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &383323381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1673,7 +1678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: '!'
+  initialMessage: Hey, are you liking this?
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -2420,7 +2425,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 988924312}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d4be4d5fc5e34544e9858576533fb077, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2677,6 +2682,8 @@ Transform:
   - {fileID: 955695807}
   - {fileID: 1756864792}
   - {fileID: 1694914488}
+  - {fileID: 342432909}
+  - {fileID: 1578715721}
   m_Father: {fileID: 1121127726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1010683142
@@ -2733,7 +2740,7 @@ GameObject:
   - component: {fileID: 1081049211}
   - component: {fileID: 1081049214}
   m_Layer: 0
-  m_Name: Dialog
+  m_Name: logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2797,7 +2804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: You found a secret area!
+  initialMessage: You found a shader!
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -3207,7 +3214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: '!'
+  initialMessage: Hey, are you liking this?
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -3375,7 +3382,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 988924312}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f42ba886ae9261a42b43e40eac785c9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3684,6 +3691,11 @@ MonoBehaviour:
   oscillationAmplitude: 1
   oscillationSpeed: 1
   rotationSpeed: {x: 0, y: 90, z: 0}
+--- !u!4 &1578715721 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d4be4d5fc5e34544e9858576533fb077, type: 3}
+  m_PrefabInstance: {fileID: 815765111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1585730670
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,7 +3745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: '!'
+  initialMessage: Hey, are you liking this?
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -4219,6 +4231,8 @@ GameObject:
   - component: {fileID: 1872132137}
   - component: {fileID: 1872132136}
   - component: {fileID: 1872132135}
+  - component: {fileID: 1872132142}
+  - component: {fileID: 1872132143}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4367,6 +4381,111 @@ Transform:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1872132142
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872132134}
+  m_Enabled: 1
+--- !u!82 &1872132143
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872132134}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 9ef35f46f64b3b14dab545e417971090, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 8e56e2496c19bf14b82cbaecc85703bf, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1882800249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14f82dc454a9d47459a1e7f5cd5c2899, type: 3}
@@ -4651,7 +4770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialog
   dialogUI: {fileID: 1111825489}
   dialogText: {fileID: 283711960}
-  initialMessage: '!'
+  initialMessage: Hey, are you liking this?
   secondaryMessage: 
   keyToChangeMessage: 101
   playerTag: Player
@@ -5530,5 +5649,3 @@ SceneRoots:
   - {fileID: 2102843401}
   - {fileID: 1241699142}
   - {fileID: 1121127726}
-  - {fileID: 1304559334}
-  - {fileID: 815765111}
