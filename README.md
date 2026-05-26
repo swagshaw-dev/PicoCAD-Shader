@@ -1,7 +1,7 @@
 # PicoCAD-Shader
 A shader with faithful recreation for 1 & 2, and more.
 
-
+<img width="443" height="333" alt="picocadshader" src="https://github.com/user-attachments/assets/a6d72587-af6b-4135-b900-38bb2838d762" />
 
 
 # 🎨 PicoCAD-Style URP Shader for Unity 6.x
