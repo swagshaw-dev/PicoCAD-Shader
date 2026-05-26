@@ -122,7 +122,7 @@ For accurate pixel-aligned rendering, I used a pixel-snapping camera setup found
 - **Johan Peitz** – [PicoCAD](https://www.picocad.net/) & PicoCAD Bunny
 - **hfcred** – [PicoCAD2 Web Viewer](https://github.com/hfcRed/PicoCAD2-Web-Viewer)
 - **aladarknis** - [Godot PicoCAD Importer](https://github.com/aladarknis/godot-picocad2-importer)
-- **GlasCade** – Demo scene music - [Check out his portfolio](https://glascade.carrd.co/)
+- **Glascade** – Demo scene music - [Check out his portfolio](https://glascade.carrd.co/)
 - **Para** – Jet, books, stop sign area assets - [Check out his itch.io](https://paramonium.itch.io/)
 - **Holland** (`holland1793` on Discord) – Soft serve cone model
 - **You** – For trying it out!
