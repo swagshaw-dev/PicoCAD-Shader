@@ -6,7 +6,8 @@ A shader with faithful recreation for 1 & 2, and more.
 
 # 🎨 PicoCAD-Style URP Shader for Unity 6.x
 
-A beginner-friendly Unity URP shader designed to emulate the crisp, low-poly aesthetic of **PicoCAD**. Built for simplicity and creativity, this shader includes a demo scene, and intuitive inspector controls. It's robust, gets the job done, and is meant to encourage experimentation.
+A beginner-friendly Unity URP shader designed to emulate the crisp, low-poly aesthetic of **PicoCAD**. Import your models and get started!
+Built for simplicity and creativity, this shader includes a demo scene, and intuitive inspector controls. It's robust, gets the job done, and is meant to encourage experimentation.
 
 > 💡 *"It's probably not the best shader in the world. But, it gets the job done and I hope it encourages creativity."*
 
@@ -26,7 +27,7 @@ For accurate color reproduction, **disable Post-Processing** on your main camera
 - `Camera > Post Processing` → `Off`
 - `Scene View > Camera > Post Processing` → `Off`
 
-### 2. Texture Import Settings
+### 2. PNG Texture Import Settings
 To preserve the crisp, pixel-perfect look:
 - `Mip Maps` → **Off**
 - `Filter Mode` → **Point (no filter)**
@@ -118,10 +119,11 @@ For accurate pixel-aligned rendering, I used a pixel-snapping camera setup found
 
 ## 🙏 Credits
 
-- **Johan Peitz** – [PicoCAD](https://www.picocad.com/) & [The Bunny](https://www.picocad.com/bunny)
-- **hfcred** – [WedViewer](https://github.com/hfcred/wedviewer) (base shader architecture)
-- **GlasCade** – Demo scene music
-- **Para** – Jet, books, stop sign area assets
+- **Johan Peitz** – [PicoCAD](https://www.picocad.com/) & PicoCAD Bunny
+- **hfcred** – [PicoCAD2 Web Viewer](https://github.com/hfcRed/PicoCAD2-Web-Viewer)
+- **aladarknis** - [Godot PicoCAD Importer](https://github.com/aladarknis/godot-picocad2-importer)
+- **GlasCade** – Demo scene music - [Check out his YT](https://www.youtube.com/@glascade/shorts)
+- **Para** – [Jet, books, stop sign area assets](https://paramonium.itch.io/)
 - **Holland** (`holland1793` on Discord) – Soft serve cone model
 - **You** – For trying it out!
 
