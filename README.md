@@ -130,10 +130,11 @@ For accurate pixel-aligned rendering, I used a pixel-snapping camera setup found
 ---
 
 ## 📜 License
-This project is free to use, modify, and share under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
-🔗 [View License](https://creativecommons.org/licenses/by/4.0/)
+This project is free to use, modify, and share under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license.  
+🔗 [View License](https://creativecommons.org/licenses/by-nc/4.0/)
 
-You must give appropriate credit, indicate changes, and link to the license. No warranty is provided.
+You must give appropriate credit, indicate changes, and link to the license. **Commercial use is not permitted.** No warranty is provided.
+Further use requires prior written permission from the copyright holder.
 
 ---
 
