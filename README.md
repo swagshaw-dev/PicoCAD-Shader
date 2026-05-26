@@ -119,7 +119,7 @@ For accurate pixel-aligned rendering, I used a pixel-snapping camera setup found
 
 ## 🙏 Credits
 
-- **Johan Peitz** – [PicoCAD](https://www.picocad.com/) & PicoCAD Bunny
+- **Johan Peitz** – [PicoCAD](https://www.picocad.net/) & PicoCAD Bunny
 - **hfcred** – [PicoCAD2 Web Viewer](https://github.com/hfcRed/PicoCAD2-Web-Viewer)
 - **aladarknis** - [Godot PicoCAD Importer](https://github.com/aladarknis/godot-picocad2-importer)
 - **GlasCade** – Demo scene music - [Check out his YT](https://www.youtube.com/@glascade/shorts)
@@ -139,7 +139,7 @@ Further use requires prior written permission from the copyright holder.
 ---
 
 ## 💬 Community & Support
-- 🌐 Join the Discord: [Insert Discord Invite Link]
+- 🌐 Join the Discord: https://discord.gg/ZexSFA2Wm9
 - 🍴 Fork freely, tweak as needed, and share your builds!
 - 📝 I don't plan to offer extensive tech support beyond this guide, but I welcome PRs, feedback, and community contributions.
 
