@@ -25,7 +25,10 @@ Built for simplicity and creativity, this shader includes a demo scene, and intu
 ### 1. Camera & Viewport
 For accurate color reproduction, **disable Post-Processing** on your main camera and in the Scene Viewport:
 - `Camera > Post Processing` → `Off`
+<img width="389" height="251" alt="image" src="https://github.com/user-attachments/assets/afff8258-fdcb-498b-9fb1-d94c427a462f" />
 - `Scene View > Camera > Post Processing` → `Off`
+<img width="169" height="161" alt="image" src="https://github.com/user-attachments/assets/1b62c551-2846-415b-9d36-3bd2f0823983" />
+
 
 ### 2. PNG Texture Import Settings
 To preserve the crisp, pixel-perfect look:
