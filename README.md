@@ -37,7 +37,6 @@ To preserve the crisp, pixel-perfect look:
 - `Filter Mode` → **Point (no filter)**
 - `Compression` → **None**
 - `Alpha Source` → **From Input**
-- 
 <img width="407" height="597" alt="image" src="https://github.com/user-attachments/assets/5b29e4da-d2e2-4cfe-9767-dab091a67859" />
 
 ### 3. Palette Setup
