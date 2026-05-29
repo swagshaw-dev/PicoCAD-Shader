@@ -45,8 +45,7 @@ Copy your palette directly from PicoCAD:
 
 (Or just make edits to the provided bit-palette.png)
 
-<img width="405" height="736" alt="image" src="https://github.com/user-attachments/assets/ea9a92da-7740-4373-b5c8-f35a7f7d4a0e" />
-
+<img width="407" height="597" alt="image" src="https://github.com/user-attachments/assets/5b29e4da-d2e2-4cfe-9767-dab091a67859" />
 
 ---
 
