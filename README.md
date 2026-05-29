@@ -33,7 +33,8 @@ To preserve the crisp, pixel-perfect look:
 - `Filter Mode` → **Point (no filter)**
 - `Compression` → **None**
 - `Alpha Source` → **From Input**
-
+- 
+<img width="407" height="597" alt="image" src="https://github.com/user-attachments/assets/5b29e4da-d2e2-4cfe-9767-dab091a67859" />
 
 ### 3. Palette Setup
 Copy your palette directly from PicoCAD:
@@ -45,7 +46,7 @@ Copy your palette directly from PicoCAD:
 
 (Or just make edits to the provided bit-palette.png)
 
-<img width="407" height="597" alt="image" src="https://github.com/user-attachments/assets/5b29e4da-d2e2-4cfe-9767-dab091a67859" />
+<img width="416" height="522" alt="image" src="https://github.com/user-attachments/assets/9f7adafa-6395-4a15-838a-45ea4ebfd262" />
 
 ---
 
