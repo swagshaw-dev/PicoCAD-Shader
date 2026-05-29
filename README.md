@@ -39,7 +39,7 @@ To preserve the crisp, pixel-perfect look:
 ### 3. Palette Setup
 Copy your palette directly from PicoCAD:
 1. Open your PicoCAD scene
-2. Screenshot the palette grid
+2. Screenshot the palette shading grid
 3. Edit into 16x3 image
 4. Import into Unity with settings above
 5. Assign to the shader's `Palette` property
